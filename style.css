@@ -164,6 +164,9 @@ h2{
 .contactSNS a img:hover{
   transform: translateY(-10px);
 }
+
+/* ===== my project ===== */
+
 .myProject{
   padding: 160px 0;
 }
@@ -191,9 +194,9 @@ h2{
 .myProjectPicLastBox{
   justify-content: space-between;
 }
-footer{
-  /* background: var(--black); */
-}
+
+/* ===== footer ===== */
+
 .footerText{
   background: var(--black);
   padding: 40px 0;
