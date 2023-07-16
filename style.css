@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root{
+  --white: #fff;
+  --gray: #D1D1D1;
+  --black: #000;
+  --green: #00FFA3;
+  --linear: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  --main-fz: 24px;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
+  font-family: 'Bruno Ace', cursive;
+}
+
+img{
+  vertical-align: middle;
+}
+
+a{
+  text-decoration: none;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  width: 1296px;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 64px;
+}
+
+.black_bg{
+  background: var(--black);
+}
+
+/* ====== nav ====== */
+.nav ul{
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.nav ul li a{
+  color: var(--gray);
+  cursor: pointer;
+  transition: .4s;
+  max-width: 306px;
+  min-height: 48px;
+  display: block;
+}
+.nav ul li a:hover{
+  color: var(--green);
+  transform: translateY(-10);
+}
+
+/* ====== profile ====== */
+.profile{
+  padding: 72px 0;
+}
+.profileContent{
+  margin: auto 0 auto 24px;
+}
+.profileContent h2{
+  color: var(--white);
+}
+.profileContent h1{
+  color: var(--green);
+  font-size: 128px;
+  text-align: end;
+}
+.contactBox{
+  text-align: right;
+}
+.btn{
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: .4s;
+}
+.btn-contact{
+  background: var(--white);
+  color: var(--black);
+}
+.btn-contact:hover{
+  background: var(--green);
+}
+
+/* ===== Introduction ===== */
+.introduction{
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true) center center;
+  background-size: cover;
+  color: var(--white);
+  justify-content: center;
+  padding: 160px 0;
+}
+.introContent p{
+  width: 526px;
+  font-size: var(--main-fz)
+}
+.introContent *:not(img){
+  margin-bottom: 36px;
+}
+.introductionPic img{
+  margin-left: 24px;
+}
+
+/* ===== about me ==== */
+.aboutBox{
+  padding: 160px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutMeCard{
+  width: 636px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aboutMeCard li{
+  width: 306px;
+  border: 1px solid var(--gray);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin:12px 0;
+}
+.aboutMeCard p:first-child,.aboutMeCard h3{
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.aboutMeContent{
+  width: 526px;
+}
+.aboutMeContent p{
+  padding-top: 36px;
+  font-size: var(--main-fz);
+}
+
+/* ===== contactMeBox ===== */
+.contactMeBox{
+  background: var(--linear);
+  padding: 96px 0;
+}
+.contactMeBox .container{
+  justify-content: space-between;
+}
+.contactContent{
+  align-items: center;
+}
+.contactContent h2{
+  color: var(--white);
+  margin-right: 16px;
+}
+.contactSNS a img{
+  transition: .4s;
+}
+.contactSNS a img:hover{
+  transform: translateY(-10px);
+}
+.myProject{
+  padding: 160px 0;
+}
+.myProjectTitle{
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.projectContent{
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.seeMoreBtnBox{
+  text-align: right;
+}
+.btn_seeMore{
+  background: var(--black);
+  color: var(--white);
+}
+.btn_seeMore:hover{
+  background: var(--green);
+  color: var(--black);
+}
+.myProjectPicLastBox{
+  justify-content: space-between;
+}
+footer{
+  /* background: var(--black); */
+}
+.footerText{
+  background: var(--black);
+  padding: 40px 0;
+  text-align: center;
+  color: var(--white);
+}
